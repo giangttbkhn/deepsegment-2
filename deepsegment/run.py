@@ -1,0 +1,5 @@
+from deepsegment import DeepSegment
+segmenter = DeepSegment(checkpoint_path='/Users/trinhgiang/PycharmProjects/deepsegment-2/vi/checkpoint',params_path='/Users/trinhgiang/PycharmProjects/deepsegment-2/vi/params', utils_path='/Users/trinhgiang/PycharmProjects/deepsegment-2/vi/utils')
+# print(segmenter.segment('Tư vấn cho khách hàng về chữ ký số và các phần mềm bảo hiểm xã hội điện tử, hóa đơn điện tử, chữ ký số ..vv.'))
+sent = 'Nhân viên kinh doanh và chăm sóc khách hàng 10/2015 - 04/2016 - Tư vấn cho khách hàng về chữ ký số và các phần mềm bảo hiểm xã hội điện tử, hóa đơn điện tử, chữ ký số ..vv.. -Hướng dẫn khách hàng về thủ tục hồ sơ để đăng ký chữ ký số và các phần mềm của công ty - Giải đáp thắc mắc của khách hàng và chuyển yêu cầu của khách hàng cho bộ phận liên quan'
+print(segmenter.segment_long(sent))
