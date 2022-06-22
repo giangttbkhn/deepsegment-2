@@ -34,7 +34,7 @@ mkl-fft==1.0.15
 mkl-random==1.1.1
 mkl-service==2.3.0
 more-itertools==8.3.0
-numpy==1.18.5
+numpy==1.22.0
 opt-einsum==3.1.0
 packaging==20.3
 pluggy==0.13.1
